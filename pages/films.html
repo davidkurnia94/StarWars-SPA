@@ -1,0 +1,47 @@
+<div class="col-md-10 col-md-offset-1" ng-if="!loading">
+	<div ng-if="film.title">
+
+		<div class="page-header">
+			<h1>Episode {{ id }}: {{ film.title }}</h1>
+		</div>
+
+    	<p><a href="#/">Back to Home</a><p>
+
+    	<div class="col-md-12">
+    		<div class="panel panel-primary">
+    			<div class="panel-heading">Opening Crawl</div>
+    			<div class="panel-body">{{ film.opening_crawl }}</div>
+    		</div>
+    	</div>
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">General Info</div>
+				<div class="panel-body">
+					<dl>
+						<dt>Episode</dt>
+						<dd>{{ film.episode_id }}</dd>
+						<br>
+						<dt>Title</dt>
+						<dd>{{ film.title }}</dd>
+						<br>
+						<dt>Director</dt>
+						<dd>{{ film.director }}</dd>
+						<br>
+						<dt>Producer</dt>
+						<dd>{{ film.producer }}</dd>
+						<br>
+						<dt>Release Date</dt>
+						<dd>{{ film.release_date }}</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="col-md-10 col-md-offset-1" ng-if="loading">
+	<div class="page-header">
+	    <h1>Loading</h1>
+	</div>
+</div>

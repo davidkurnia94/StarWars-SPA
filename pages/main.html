@@ -1,0 +1,90 @@
+<div class="col-md-10 col-md-offset-1">
+	<div class="page-header align-center" style="text-align: center">
+		<h1>{{ heading }}</h1>
+		<p>{{ paragraph }}</p>
+	</div>
+
+	<blockquote class="bg-warning" style="text-align: left;">
+		<b>Disclaimer</b>: All information in this site is provided by <a href="http://swapi.co">swapi.co</a>. Full credits goes to them!
+	</blockquote>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">Characters</div>
+		<div class="panel-body">
+			<ul class="btn-group" ng-repeat="person in people">
+				<a href="#/character/{{ person.name }}">
+					<button class="btn btn-default">
+						{{ person.name }}
+					</button>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">Films</div>
+		<div class="panel-body">
+			<ul class="btn-group" ng-repeat="film in films">
+				<a href="#/film/{{ film.episode_id }}">
+					<button class="btn btn-default">
+						{{ film.title }}
+					</button>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">Species</div>
+		<div class="panel-body">
+			<ul class="btn-group" ng-repeat="species in species">
+				<a href="#/species/{{ species.name }}">
+					<button class="btn btn-default">
+						{{ species.name }}
+					</button>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">Planets</div>
+		<div class="panel-body">
+			<ul class="btn-group" ng-repeat="planet in planets">
+				<a href="#/planet/{{ planet.name }}">
+					<button class="btn btn-default">
+						{{ planet.name }}
+					</button>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">Starships</div>
+		<div class="panel-body">
+			<ul class="btn-group" ng-repeat="starship in starships">
+				<a href="#/starship/{{ starship.name }}">
+					<button class="btn btn-default">
+						{{ starship.name }}
+					</button>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+	<div class="panel panel-primary">
+		<div class="panel-heading">Vehicles</div>
+		<div class="panel-body">
+			<ul class="btn-group" ng-repeat="vehicle in vehicles">
+				<a href="#/vehicle/{{ vehicle.name }}">
+					<button class="btn btn-default">
+						{{ vehicle.name }}
+					</button>
+				</a>
+			</ul>
+		</div>
+	</div>
+
+</div>
+

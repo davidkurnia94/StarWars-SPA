@@ -1,0 +1,55 @@
+<div class="col-md-10 col-md-offset-1" ng-if="!loading">
+	<div ng-if="planet.name">
+
+		<div class="page-header">
+			<h1>Planet {{ id }}</h1>
+		</div>
+
+    	<p><a href="#/">Back to Home</a><p>
+
+		<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Planet {{ id }} Info</div>
+				<div class="panel-body">
+					<dl class="col-md-6">
+						<dt>Planet Name</dt>
+						<dd>{{ planet.name }}</dd>
+						<br>
+						<dt>Population</dt>
+						<dd>{{ planet.population }}</dd>
+						<br>
+						<dt>Rotation Period</dt>
+						<dd>{{ planet.rotation_period }}</dd>
+						<br>
+						<dt>Orbital Period</dt>
+						<dd>{{ planet.orbital_period }}</dd>
+						<br>
+					</dl>
+					<dl class="col-md-6">
+						<dt>Diameter</dt>
+						<dd>{{ planet.diameter }}</dd>
+						<br>
+						<dt>Climate</dt>
+						<dd>{{ planet.climate }}</dd>
+						<br>
+						<dt>Gravity</dt>
+						<dd>{{ planet.gravity }}</dd>
+						<br>
+						<dt>Terrain</dt>
+						<dd>{{ planet.terrain }}</dd>
+						<br>
+						<dt>Surface Water</dt>
+						<dd>{{ planet.surface_water }}</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="col-md-10 col-md-offset-1" ng-if="loading">
+	<div class="page-header">
+	    <h1>Loading</h1>
+	</div>
+</div>

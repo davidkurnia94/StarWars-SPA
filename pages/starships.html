@@ -1,0 +1,75 @@
+<div class="col-md-10 col-md-offset-1" ng-if="!loading">
+	<div ng-if="starship.name">
+
+		<div class="page-header">
+			<h1>The {{ id }}</h1>
+			<p>Manufactured by <b>{{ starship.manufacturer }}</b>.
+		</div>
+
+    	<p><a href="#/">Back to Home</a><p>
+
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Production Information</div>
+				<div class="panel-body">
+					<dl>
+						<dt>Starship Name</dt>
+						<dd>{{ starship.name }}.</dd>
+						<br>
+						<dt>Class</dt>
+						<dd>{{ starship.starship_class }}.</dd>
+						<br>
+						<dt>Model</dt>
+						<dd>{{ starship.model }}.</dd>
+						<br>
+						<dt>Manufacturer</dt>
+						<dd>{{ starship.manufacturer }}.</dd>
+						<br>
+						<dt>Costs</dt>
+						<dd>{{ starship.cost_in_credits }} credits.</dd>
+					</dl>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Technical Specifications</div>
+				<div class="panel-body">
+					<dl>
+						<dt>Length</dt>
+						<dd>{{ starship.length }} meters.</dd>
+						<br>
+						<dt>Maximum Atmosphering Speed</dt>
+						<dd>{{ starship.max_atmosphering_speed }} km/h.</dd>
+						<br>
+						<dt>Crews</dt>
+						<dd>{{ starship.crew }}.</dd>
+						<br>
+						<dt>Passengers</dt>
+						<dd>{{ starship.passengers }} troops.</dd>
+						<br>
+						<dt>Cargo Capacity</dt>
+						<dd>{{ starship.cargo_capacity }} kilograms.</dd>
+						<br>
+						<dt>Consumables</dt>
+						<dd>{{ starship.consumables }}.</dd>
+						<br>
+						<dt>Hyperdrive Rating</dt>
+						<dd>{{ starship.hyperdrive-rating }}.</dd>
+						<br>
+						<dt>MGLT</dt>
+						<dd>{{ starship.MGLT }} MGLT.</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="col-md-10 col-md-offset-1" ng-if="loading">
+	<div class="page-header">
+	    <h1>Loading</h1>
+	</div>
+</div>

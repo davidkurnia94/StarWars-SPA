@@ -1,0 +1,65 @@
+<div class="col-md-10 col-md-offset-1" ng-if="!loading">
+	<div ng-if="species.name">
+
+		<div class="page-header">
+			<h1>The {{ id }}</h1>
+		</div>
+
+    	<p><a href="#/">Back to Home</a><p>
+
+    	<div class="col-md-12">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Language</div>
+				<div class="panel-body">{{ species.language }}</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Biological Classifications</div>
+				<div class="panel-body">
+					<dl>
+						<dt>Designation</dt>
+						<dd>{{ species.designation }}</dd>
+						<br>
+						<dt>Classification</dt>
+						<dd>{{ species.classification }}</dd>
+						<br>
+						<dt>Average Lifespan</dt>
+						<dd>{{ species.average_lifespan }}</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Physical Characteristics</div>
+				<div class="panel-body">
+					<dl>
+						<dt>Species Name</dt>
+						<dd>{{ species.name }}</dd>
+						<br>
+						<dt>Average Height</dt>
+						<dd>{{ species.average_height }}</dd>
+						<br>
+						<dt>Skin Colors</dt>
+						<dd>{{ species.skin_colors }}</dd>
+						<br>
+						<dt>Hair Colors</dt>
+						<dd>{{ species.hair_colors }}</dd>
+						<br>
+						<dt>Eye Colors</dt>
+						<dd>{{ species.eye_colors }}</dd>
+						<br>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<div class="col-md-10 col-md-offset-1" ng-if="loading">
+	<div class="page-header">
+	    <h1>Loading</h1>
+	</div>
+</div>

@@ -1,0 +1,58 @@
+<div class="col-md-10 col-md-offset-1" ng-if="!loading">
+	<div ng-if="character.name">
+
+		<div class="page-header">
+			<h1>{{ character.name }}</h1>
+		</div>
+
+    	<p><a href="#/">Back to Home</a><p>
+
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Biographical Information</div>
+				<div class="panel-body">
+					<dl>
+						<dt>Name</dt>
+						<dd>{{ character.name }}.</dd>
+						<br>
+						<dt>Gender</dt>
+						<dd>{{ character.gender }}.</dd>
+						<br>
+						<dt>Birth Year</dt>
+						<dd>{{ character.birth_year }}.</dd>
+						<br>
+					</dl>
+				</div>
+			</div>
+		</div>
+		<div class="col-md-6">
+			<div class="panel panel-primary">
+				<div class="panel-heading">Physical Description</div>
+				<div class="panel-body">
+					<dl>
+						<dt>Height</dt>
+						<dd>{{ character.height }} cm.</dd>
+						<br>
+						<dt>Mass</dt>
+						<dd>{{ character.mass }} kg.</dd>
+						<br>
+						<dt>Hair Color</dt>
+						<dd>{{ character.hair_color }}.</dd>
+						<br>
+						<dt>Skin Color</dt>
+						<dd>{{ character.skin_color }}.</dd>
+						<br>
+						<dt>Eye Color</dt>
+						<dd>{{ character.eye_color }}.</dd>
+					</dl>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div class="col-md-10 col-md-offset-1" ng-if="loading">
+	<div class="page-header">
+	    <h1>Loading</h1>
+	</div>
+</div>
