@@ -32,3 +32,4 @@ Now, go to `localhost:8000` to see it in action.
 ## Few Notes
  * If somehow `python -m SimpleHTTPServer 8000` isn't working, try using `python -m http.server 8000`.
  * For Safari users, if you are experiencing issue with the website not displaying any data, it is due to Cross-Origin Restrictions. To disable this, go to Develop > Disable Cross-Origin Restrictions.
+ * This repository is also available at [BitBucket](https://davidkurnia94@bitbucket.org/davidkurnia94/starwars-spa.git).
