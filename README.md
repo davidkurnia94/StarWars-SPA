@@ -30,5 +30,5 @@ Now, go to `localhost:8000` to see it in action.
 
 
 ## Few Notes
- * If `python -m SimpleHTTPServer 8000` isn't working, try using `python -m http.server 8000`.
+ * If `python -m **SimpleHTTPServer** 8000` isn't working, try using `python -m **http.server** 8000`.
  * For Safari users, if you are experiencing issue with the website not displaying any data, it is due to Cross-Origin Restrictions. To disable this, go to Develop > Disable Cross-Origin Restrictions.
