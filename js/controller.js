@@ -171,8 +171,8 @@ starwarsApp.controller('VehicleController', ['$routeParams', '$scope', 'SwapiSer
 		SwapiService.vehicles().then(function(data) {
 			angular.forEach(data.data.results, function(vehicle) {
 				if(vehicle.name.toLowerCase() === $routeParams.id.toLowerCase()) {
-					angular.copy(vehicle, $scope.starship);
-					console.log(starship);
+					angular.copy(vehicle, $scope.vehicle);
+					console.log(vehicle);
 				}
 			});
 			$scope.loading = false;
